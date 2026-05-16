@@ -1,7 +1,7 @@
 import './app.style.scss'
 import { useEffect, useState, useCallback } from 'react'
-import TaskForm from './components/TaskForm'
-import TaskList from './components/TaskList'
+import TaskForm from './components/TaskForm/TaskForm.jsx'
+import TaskList from './components/TaskList/TaskList.jsx'
 
 function App() {
 
@@ -82,8 +82,7 @@ function App() {
   }, [])
 
   return (<>
-    
-      <h1 className='title'>To-Do List </h1>
+      <h1 className='title'>To-Do List</h1>
       <div className='to-do-list'>
         <TaskForm 
           handleSubmit={handleSubmit}
