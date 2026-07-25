@@ -2,9 +2,7 @@ import './editTaskForm.style.scss'
 
 function EditTaskForm({ task, index, handleEditSubmit }) {
     
-    return (<form action="" data-n={index} 
-        style={{ gap: '10px', margin: '10px auto' }} 
-        onSubmit={handleEditSubmit}>
+    return (<form action="" data-n={index} onSubmit={handleEditSubmit}>
       
         <div className='div-input'>
           <input type="text" name="Title" placeholder='Title' defaultValue={task.Title} />

@@ -31,8 +31,4 @@ button {
 .to-do-list {
     width: min(1100px, 100%);
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 360px 1fr;
-    gap: 24px;
-    align-items: start;
 }
